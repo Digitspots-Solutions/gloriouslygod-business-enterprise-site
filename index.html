@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLORIOUSLYGOD BUSINESS ENTERPRISE - Financial Services & Farm Produce in Etsako West</title>
+    <meta name="description" content="Your Trusted Partner for Financial Services and Quality Farm Produce in Etsako West, Edo State. POS services and fresh agricultural products.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #1B2A4A;
+            --color-accent: #C9A84C;
+            --color-bg: #FAFAF8;
+            --color-text: #1A1A1A;
+            --font-display: 'Cormorant Garamond', serif;
+            --font-body: 'DM Sans', sans-serif;
+            --border-radius: 4px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text);
+            background-color: var(--color-bg);
+            line-height: 1.7;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        section {
+            animation: fadeUp 0.6s ease forwards;
+        }
+
+        section:nth-of-type(1) { animation-delay: 0s; }
+        section:nth-of-type(2) { animation-delay: 0.1s; }
+        section:nth-of-type(3) { animation-delay: 0.2s; }
+        section:nth-of-type(4) { animation-delay: 0.3s; }
+        section:nth-of-type(5) { animation-delay: 0.4s; }
+        section:nth-of-type(6) { animation-delay: 0.5s; }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(250, 250, 248, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-accent);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .mobile-menu-btn span {
+            width: 25px;
+            height: 3px;
+            background: var(--color-text);
+            transition: all 0.3s ease;
+            transform-origin: center;
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 70px;
+            right: -100%;
+            width: 300px;
+            height: calc(100vh - 70px);
+            background: var(--color-bg);
+            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+            transition: right 0.3s ease;
+            z-index: 999;
+            padding: 2rem;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+        }
+
+        .mobile-menu ul li {
+            margin-bottom: 1.5rem;
+        }
+
+        .mobile-menu ul a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            display: block;
+            padding: 0.5rem 0;
+        }
+
+        .mobile-menu ul a:hover {
+            color: var(--color-primary);
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: -1;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding: 0 2rem;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .hero-tagline {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            color: var(--color-accent);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background-color: var(--color-accent);
+            color: var(--color-primary);
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: var(--color-primary);
+            color: var(--color-accent);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .section-padding {
+            padding: 80px 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2.8rem;
+            color: var(--color-primary);
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .about-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .service-card h3 {
+            color: var(--color-primary);
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            line-height: 1.8;
+        }
+
+        .why-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .why-card {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--color-accent);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .why-card h3 {
+            color: var(--color-primary);
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .contact-section {
+            background: var(--color-primary);
+            color: white;
+        }
+
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-section .section-title {
+            color: white;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            text-align: left;
+        }
+
+        .contact-item h3 {
+            color: var(--color-accent);
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .contact-item p {
+            line-height: 1.8;
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: var(--color-accent);
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background: var(--color-text);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-tagline {
+                font-size: 1.2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .section-padding {
+                padding: 48px 1.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .about-split {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about-image {
+                height: 300px;
+            }
+
+            .services-grid,
+            .why-cards,
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 1.6rem;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .logo {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 1024px) and (min-width: 769px) {
+            .section-padding {
+                padding: 60px 2rem;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">GLORIOUSLYGOD</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#why-choose-us">Why Choose Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#why-choose-us">Why Choose Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <section id="hero" class="hero">
+        <img src="https://images.pexels.com/photos/15171155/pexels-photo-15171155.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="GLORIOUSLYGOD Business Enterprise" class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>GLORIOUSLYGOD BUSINESS ENTERPRISE</h1>
+            <p class="hero-tagline">Your Trusted Partner for Financial Services and Quality Farm Produce</p>
+            <p>Welcome to GLORIOUSLYGOD BUSINESS ENTERPRISE - Serving Etsako West with reliable POS services and fresh farm produce. We're your one-stop destination for quick cash transactions and quality agricultural products.</p>
+            <a href="#contact" class="cta-button">Contact Us Today</a>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-split">
+                <img src="https://images.pexels.com/photos/6720592/pexels-photo-6720592.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="About GLORIOUSLYGOD Business Enterprise" class="about-image">
+                <div class="about-text">
+                    <p>GLORIOUSLYGOD BUSINESS ENTERPRISE is a trusted name in Etsako West, combining modern financial convenience with agricultural excellence. Located along Ughiole Power line in Aviele, Edo State, we serve our community by providing essential POS banking services and supplying fresh, quality farm produce. Our dual focus allows us to meet the everyday needs of individuals, families, and businesses across the region. We pride ourselves on reliability, integrity, and our commitment to supporting the economic growth of our community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section-padding" style="background: white;">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>POS Services</h3>
+                    <p>We provide fast, secure, and reliable Point of Sale transactions for all your banking needs. Cash withdrawals, deposits, transfers, and bill payments - all at competitive rates with minimal waiting time.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Farm Produce Supply</h3>
+                    <p>Fresh, quality agricultural products directly from local farms. We supply yams, cassava, vegetables, grains, and seasonal produce to households, restaurants, and retailers. Bulk orders welcome.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Cash-In/Cash-Out</h3>
+                    <p>Convenient cash services for mobile money and bank transactions, serving customers across Etsako West and surrounding areas.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Agricultural Consultation</h3>
+                    <p>Guidance on farm produce quality, seasonal availability, and bulk procurement for commercial buyers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="why-cards">
+                <div class="why-card">
+                    <h3>Convenient Location</h3>
+                    <p>Easily accessible along Ughiole Power line in Aviele, serving all of Etsako West.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Dual Service Excellence</h3>
+                    <p>Unique combination of financial services and quality farm produce under one roof.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Competitive Rates</h3>
+                    <p>Best POS transaction rates in the area with no hidden charges.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Fresh Quality Produce</h3>
+                    <p>Direct farm sourcing ensures you get the freshest agricultural products.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Community Trust</h3>
+                    <p>Built on years of reliable service and strong relationships with our customers.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Extended Hours</h3>
+                    <p>Available when you need us, serving our community's needs throughout the day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">Contact Us</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">Visit us today at GLORIOUSLYGOD BUSINESS ENTERPRISE for all your POS and farm produce needs. We're here to serve you!</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Location</h3>
+                        <p>Along Ughiole Power line, Aviele<br>Etsako West, Edo State, Nigeria</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Phone</h3>
+                        <p><a href="tel:+2348066668322">08066668322</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Business Hours</h3>
+                        <p>Monday - Saturday: 8:00 AM - 6:00 PM<br>Sunday: By appointment</p>
+                    </div>
+                </div>
+                <p style="margin-top: 3rem; font-size: 1.1rem;">Whether you need quick cash transactions or fresh farm produce, we're your reliable partner in Etsako West. Call or visit us today!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 GLORIOUSLYGOD BUSINESS ENTERPRISE. All rights reserved.</p>
+    </footer>
+
+    <a href="https://wa.me/2348066668322" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" fill="currentColor" width="32" height="32">
+            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-5.254 1.408 1.409-5.235-0.321-0.525c-1.321-2.166-2.019-4.65-2.019-7.187 0-7.589 6.178-13.767 13.767-13.767s13.767 6.178 13.767 13.767-6.178 13.767-13.767 13.767zM21.713 18.461c-0.288-0.144-1.706-0.842-1.97-0.938-0.265-0.096-0.458-0.144-0.651 0.144s-0.747 0.938-0.916 1.13c-0.169 0.192-0.337 0.216-0.626 0.072-0.288-0.144-1.218-0.449-2.32-1.433-0.858-0.766-1.437-1.713-1.606-2.001s-0.018-0.443 0.126-0.587c0.13-0.13 0.288-0.337 0.432-0.506s0.192-0.288 0.288-0.481c0.096-0.192 0.048-0.361-0.024-0.506s-0.651-1.57-0.892-2.146c-0.235-0.561-0.474-0.485-0.651-0.493-0.169-0.008-0.361-0.010-0.554-0.010s-0.506 0.072-0.771 0.361c-0.265 0.288-1.010 0.986-1.010 2.407s1.034 2.792 1.178 2.984c0.144 0.192 2.035 3.108 4.928 4.359 0.688 0.297 1.226 0.474 1.645 0.607 0.691 0.22 1.321 0.189 1.818 0.115 0.555-0.083 1.706-0.697 1.947-1.371s0.241-1.251 0.169-1.371c-0.072-0.12-0.265-0.192-0.554-0.337z"/>
+        </svg>
+    </a>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenuBtn.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuBtn.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
