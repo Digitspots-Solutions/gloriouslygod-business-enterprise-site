@@ -1,0 +1,49 @@
+{
+  "businessName": "GLORIOUSLYGOD BUSINESS ENTERPRISE",
+  "industry": "Financial Services & Agriculture",
+  "tone": "professional-warm",
+  "tagline": "Your Trusted Partner for Financial Services and Quality Farm Produce",
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero Section",
+      "copy": "Welcome to GLORIOUSLYGOD BUSINESS ENTERPRISE - Serving Etsako West with reliable POS services and fresh farm produce. We're your one-stop destination for quick cash transactions and quality agricultural products.",
+      "imagePrompt": "A vibrant Nigerian business storefront in a rural community setting, showing a modern POS terminal on a counter alongside fresh farm produce like yams, cassava, and vegetables. Warm sunlight, green farmland visible in the background, professional yet welcoming atmosphere. Photorealistic, high quality, Nigerian rural business environment.",
+      "layout": "centered"
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "copy": "GLORIOUSLYGOD BUSINESS ENTERPRISE is a trusted name in Etsako West, combining modern financial convenience with agricultural excellence. Located along Ughiole Power line in Aviele, Edo State, we serve our community by providing essential POS banking services and supplying fresh, quality farm produce. Our dual focus allows us to meet the everyday needs of individuals, families, and businesses across the region. We pride ourselves on reliability, integrity, and our commitment to supporting the economic growth of our community.",
+      "imagePrompt": "A welcoming Nigerian business owner standing proudly in front of their establishment, with POS machine visible and farm produce displayed. Rural Edo State landscape, community members in background, warm natural lighting, authentic Nigerian business setting. Photorealistic, professional quality.",
+      "layout": "split"
+    },
+    {
+      "id": "services",
+      "name": "Our Services",
+      "copy": "**POS Services**\nWe provide fast, secure, and reliable Point of Sale transactions for all your banking needs. Cash withdrawals, deposits, transfers, and bill payments - all at competitive rates with minimal waiting time.\n\n**Farm Produce Supply**\nFresh, quality agricultural products directly from local farms. We supply yams, cassava, vegetables, grains, and seasonal produce to households, restaurants, and retailers. Bulk orders welcome.\n\n**Cash-In/Cash-Out**\nConvenient cash services for mobile money and bank transactions, serving customers across Etsako West and surrounding areas.\n\n**Agricultural Consultation**\nGuidance on farm produce quality, seasonal availability, and bulk procurement for commercial buyers.",
+      "imagePrompt": "Split composition showing a modern POS terminal processing a transaction on one side, and abundant fresh Nigerian farm produce (yams, cassava, tomatoes, peppers) arranged attractively on the other side. Clean, professional presentation, bright natural lighting, Nigerian business context. Photorealistic, high detail.",
+      "layout": "grid"
+    },
+    {
+      "id": "why-choose-us",
+      "name": "Why Choose Us",
+      "copy": "**Convenient Location**\nEasily accessible along Ughiole Power line in Aviele, serving all of Etsako West.\n\n**Dual Service Excellence**\nUnique combination of financial services and quality farm produce under one roof.\n\n**Competitive Rates**\nBest POS transaction rates in the area with no hidden charges.\n\n**Fresh Quality Produce**\nDirect farm sourcing ensures you get the freshest agricultural products.\n\n**Community Trust**\nBuilt on years of reliable service and strong relationships with our customers.\n\n**Extended Hours**\nAvailable when you need us, serving our community's needs throughout the day.",
+      "imagePrompt": "A collage showing satisfied Nigerian customers at a POS counter, farmers with fresh harvest, and community members in a rural Edo State setting. Warm, trustworthy atmosphere, genuine smiles, authentic Nigerian rural-urban blend. Photorealistic, documentary style.",
+      "layout": "cards"
+    },
+    {
+      "id": "contact",
+      "name": "Contact Us",
+      "copy": "Visit us today at GLORIOUSLYGOD BUSINESS ENTERPRISE for all your POS and farm produce needs. We're here to serve you!\n\n**Location**\nAlong Ughiole Power line, Aviele\nEtsako West, Edo State, Nigeria\n\n**Phone**\n08066668322\n\n**Business Hours**\nMonday - Saturday: 8:00 AM - 6:00 PM\nSunday: By appointment\n\nWhether you need quick cash transactions or fresh farm produce, we're your reliable partner in Etsako West. Call or visit us today!",
+      "imagePrompt": "A clear, inviting storefront view along a Nigerian rural road with visible signage, green farmland in the distance, power lines overhead. Warm afternoon light, welcoming entrance, realistic Nigerian rural business location. Photorealistic, clear visibility, professional quality.",
+      "layout": "centered"
+    }
+  ],
+  "contact": {
+    "phone": "08066668322",
+    "email": "",
+    "address": "Along Ughiole Power line, Aviele, Etsako West, Edo State, Nigeria",
+    "whatsapp": "https://wa.me/2348066668322"
+  }
+}
